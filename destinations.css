@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(248, 241, 241);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding-left: 50px;
+    background-image: url("/images/yacht11.jpg");
+    background-position: 10% 35%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+}
+
+#name {
+    font-size: 22px;
+    color: white;
+    font-family: "Sofia", sans-serif;
+}
+
+ul {
+    margin-left: 70%;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: right;
+    font-size: 20px;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+
+li a:hover {
+    color: rgb(113, 199, 238);
+}
+
+.container {
+    display: flex;
+    height: 800px;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+}
+
+.destinations {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+    background-color: black;
+}
+
+.destinations::-webkit-scrollbar { 
+    display: none; 
+}
+
+.destination_cont {
+    position: relative;
+    margin: 10px;
+    width: 32%;
+}
+
+.dest_img {
+    width: 100%;
+    height: 200px;
+    filter: brightness(80%);
+    border-radius: 5px;
+}
+
+.dest_name {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 18px;
+    font-family: 'Open sans';
+    font-weight: 600;
+    color: white;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+}
+
+#map_img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    height: 300px;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(248, 241, 241);
+}
+
+#footer_name {
+    font-family: "Sofia", sans-serif;
+    margin: 40px;   
+}
+
+.fa {
+    text-decoration: none;
+    color: grey;
+    padding: 10px 20px;
+}
+
+@media only screen and (max-width: 768px) { 
+    #navbar {
+        flex-direction: column;
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .destinations {
+        width: 100%;
+        height: 50%;
+    }
+
+    .map {
+        width: 100%;
+        height: 50%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .destination_cont {
+        width: 60%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #navbar {
+        flex-direction: column;
+    }    
+
+    ul {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .destinations {
+        width: 100%;
+        height: 50%;
+    }
+
+    .map {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 667px) { 
+    #navbar {
+        flex-direction: column;
+    }    
+
+    ul {
+        margin-left: 0;
+        display: flex; 
+        flex-direction: column;
+    }
+}
